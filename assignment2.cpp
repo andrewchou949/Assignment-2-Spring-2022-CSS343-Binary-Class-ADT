@@ -1,14 +1,3 @@
-// I will test your BinTree class using either this main or
-// a very similar one, and this buildTree.  
-// You will want to do thorough testing on your own, 
-// which is done by altering the data.
-
-// Windows and unix store files slightly differently. Windows does not
-// always store an end-of-line char on the last line, where unix does.
-// On windows, always make sure the cursor is on the line after
-// the last line of data so it acts like unix/linux.
-
-// presumably bintree.h includes nodedata.h so the include is not needed here
 #include "bintree.h"
 #include <fstream>
 #include <iostream>
@@ -96,13 +85,6 @@ int main() {
 }
 
 //------------------------------- buildTree ----------------------------------
-// YOU COMMENT
-
-// To build a tree, read strings from a line, terminating when "$$" is
-// encountered. Since there is some work to do before the actual insert that is
-// specific to the client problem, it's best that building a tree is not a 
-// member function. It's a global function. 
-
 void buildTree(BinTree& T, ifstream& infile) {
 	string s;
 
